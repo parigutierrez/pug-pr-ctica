@@ -1,0 +1,36 @@
+doctype html
+html(lang="es")
+	head
+		meta(charset="UTF-8")
+		title Ejercicio PUG
+		meta(name="viewport", content="width=device-widt,initial-scale=1.0")
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css")
+		link(rel="stylesheet", href="main.css")
+	body
+		nav
+			div.nav-wrapper
+				a(href="#").brand-logo.center Logo
+				ul(#nav-mobile).left.hide-on-med-and-down
+					li
+						a Sass
+					li
+						a Components
+					li
+						a Javascript
+		.container-fluid
+			.row
+					img.cel.col.s4(src="img/2.jpg")
+					.col.s8
+						.row
+							mixin parrafo(titulo,texto)
+								.col.s6
+									h5 #{titulo}
+									p #{texto}
+							+parrafo("Primer título", "El primer párrafo El primer párrafo El primer párrafo El primer párrafo El primer párrafo El primer párrafo El primer párrafo")
+							+parrafo("Segundo título", "El segundo párrafo El segundo párrafo El segundo párrafo El segundo párrafo El segundo párrafo El segundo párrafoEl segundo párrafo El segundo párrafo El segundo párrafo")
+						.row
+							+parrafo("Tercer título", "El tercer párrafo El tercer párrafoEl tercer párrafo El tercer párrafo El tercer párrafoEl tercer párrafoEl tercer párrafo El tercer párrafoEl tercer párrafo")
+							+parrafo("Cuarto título", "El cuarto párrafo El cuarto párrafoEl cuarto párrafo El cuarto párrafo El cuarto párrafoEl cuarto párrafoEl cuarto párrafo El cuarto párrafoEl cuarto párrafo")
+	script(src="https://code.jquery.com/jquery-3.2.1.min.js")
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js")
+
