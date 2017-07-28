@@ -3,3 +3,45 @@
 	height: 255px;
 	margin-top: 38px;
 }
+nav{
+	background-color: white;
+}
+.menu{
+	color:gray;
+	margin-right: 25px;
+}
+.logoBack{
+width: 70%;
+height: 70%;
+margin-left: 20%;
+margin-top:2%;
+}
+.bg{
+	background-color: rgba(0,0,0,0.8);
+	filter:brightness(0.4);
+	width: 1300px;
+	height:450px;
+	margin-top: 5px;
+	position: absolute;
+}
+.elementos{
+padding:3%;
+padding-right: 52%;
+position: relative;
+}
+.elementos p{
+	color: white;
+}
+.elementos h1{
+	color: white;
+}
+.parrafos{
+	margin-top: 10%;
+}
+footer{
+
+}
+i{
+	color:cyan;
+	width: 4rem;
+}

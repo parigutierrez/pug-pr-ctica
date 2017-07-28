@@ -5,19 +5,26 @@ html(lang="es")
 		title Ejercicio PUG
 		meta(name="viewport", content="width=device-widt,initial-scale=1.0")
 		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css")
+		link(href="https://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")
 		link(rel="stylesheet", href="main.css")
 	body
 		nav
 			div.nav-wrapper
-				a(href="#").brand-logo.center Logo
-				ul(#nav-mobile).left.hide-on-med-and-down
+				a(href="#").brand-logo.left
+					img.logoBack(src="img/logo2.png")
+				ul(#nav-mobile).right.hide-on-med-and-down
 					li
-						a Sass
+						a.menu About
 					li
-						a Components
-					li
-						a Javascript
-		.container-fluid
+						a.menu Features
+		section
+			img.bg(src="img/1920x665-1.jpg")
+			div.elementos
+				h1 Mobile Strategy App
+				p Backyard is a modern and customizable landing page template designed to increase conversion of your product. Backyard is flexible to suit any kind of your business. Try now and join our happy customers!
+				button.waves-effect.waves-light.btn-large Features
+				button.waves-effect.waves-light.btn-large Suscribe
+		.container-fluid.parrafos
 			.row
 					img.cel.col.s4(src="img/2.jpg")
 					.col.s8
@@ -31,6 +38,19 @@ html(lang="es")
 						.row
 							+parrafo("Tercer título", "El tercer párrafo El tercer párrafoEl tercer párrafo El tercer párrafo El tercer párrafoEl tercer párrafoEl tercer párrafo El tercer párrafoEl tercer párrafo")
 							+parrafo("Cuarto título", "El cuarto párrafo El cuarto párrafoEl cuarto párrafo El cuarto párrafo El cuarto párrafoEl cuarto párrafoEl cuarto párrafo El cuarto párrafoEl cuarto párrafo")
+		footer.center-align
+			.container.fluid
+				.row
+					a
+						i.material-icons access_alarm
+					a
+						i.material-icons add_a_photo
+					a
+						i.material-icons audiotrack
+					a
+						i.material-icons brightness_high
+				.row
+					p Copyright Backyard 2015- template by Mox Design
 	script(src="https://code.jquery.com/jquery-3.2.1.min.js")
 	script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js")
 
